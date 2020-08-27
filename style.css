@@ -151,8 +151,8 @@ body {
 #top {
     display: inline-block;
     vertical-align: middle;
-    padding-left: 7vw;
-    padding-right: 7vw;
+    margin-left: 7vw;
+    margin-right: 7vw;
     margin-top: 35px;
     margin-bottom: -20px;
     z-index: 1;
@@ -250,7 +250,6 @@ body {
   text-align: left;
   font-family: Roboto;
   font-size: 16px;
- 
 }
 
 .description h1 {
@@ -281,15 +280,9 @@ body {
   z-index: 0;
 }
 
-ul.subject-list {
-  text-align: center;
-  list-style-type: circle;
-  margin-top: -10px;
-  margin-left: -6vw;
-  margin-right: -2vw;;
-}
-
-ul.subject-list li {
-  display:inline-block;
+td {
+  text-align: left;
+  font-family: Roboto;
+  font-size: 16px;
 }
 
