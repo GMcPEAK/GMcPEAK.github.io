@@ -35,7 +35,8 @@
     color: #a30075;
     text-shadow: .5vw .5vw white;
     vertical-align: middle;
-    margin-top: -.25vw;
+    margin-top: .125em;
+    margin-bottom: .6em;
     z-index: -1;
   }
 
@@ -88,7 +89,7 @@ body {
     margin-right: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
-    padding-top: 30px;
+    padding-top: 2em;
     background-color: #C5FCC7;
     
 }
