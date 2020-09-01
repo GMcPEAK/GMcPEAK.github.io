@@ -182,20 +182,40 @@ body {
     border-radius: 25px;
 }
 
-.content h1{
+@media all and (orientation:landscape) {
+  .content h1{
     text-align: center;
     font-family: Modern;
-    font-size: 3.5em;
+    font-size: 3em;
     margin-bottom: -.125em;
     padding-top: .35em;
+  }
+
+  .content h2{
+    text-align: center;
+    font-family: Modern;
+    font-size: 2.25em;
+    margin-top: 3px;
+    margin-bottom: 7px;
+  }
 }
 
-.content h2{
-  text-align: center;
-  font-family: Modern;
-  font-size: 2.25em;
-  margin-top: 3px;
-  margin-bottom: 7px;
+@media all and (orientation:portrait) {
+  .content h1{
+    text-align: center;
+    font-family: Modern;
+    font-size: 10vw;
+    margin-bottom: -.125em;
+    padding-top: .35em;
+  }
+
+  .content h2{
+    text-align: center;
+    font-family: Modern;
+    font-size: 7vw;
+    margin-top: 3px;
+    margin-bottom: 7px;
+  }
 }
 
 .content p{
@@ -203,7 +223,7 @@ body {
   padding-right: 2.5%;
   text-align: center;
   font-family: Roboto;
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 
 .content li {
@@ -211,7 +231,7 @@ body {
   padding-right: 2.5%;
   text-align: center;
   font-family: Roboto;
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 
 .image-list-small {
@@ -250,8 +270,8 @@ body {
   height: 6.519vw;
   margin: 0;
   padding: 0;
-  min-width: 65px;
-  min-height: 65px;
+  min-width: 40px;
+  min-height: 40px;
 }
 
 .image-list-small .details {
@@ -319,6 +339,22 @@ body {
     width: 90%;
     z-index: 0;
   }
+
+  ul.subject-list {
+    text-align: center;
+    margin-top: -10px;
+  }
+  
+  ul.subject-list li {
+    display:inline-block;
+  }
+  
+  ul.subject-list p {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1.5em;
+  }
+  
 }
 
 @media all and (orientation:portrait) {
@@ -367,26 +403,27 @@ body {
   }
 
   .logo img {
-    padding-bottom: 10px; 
+    padding-bottom: -5%; 
     margin-top: 20px;
     width: 90%;
     z-index: 0;
   }
-}
 
-ul.subject-list {
-  text-align: center;
-  list-style-type: circle;
-  margin-top: -10px;
+  ul.subject-list {
+    text-align: center;
+    margin-top: -10px;
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  ul.subject-list li {
+    display:inline-block;
+  }
+  
+  ul.subject-list p {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1.5em;
+  }
+  
 }
-
-ul.subject-list li {
-  display:inline-block;
-}
-
-ul.subject-list p {
-  text-align: center;
-  font-family: Roboto;
-  font-size: 1.5em;
-}
-
