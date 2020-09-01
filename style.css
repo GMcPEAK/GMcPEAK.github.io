@@ -85,21 +85,21 @@
 }
 
 body {
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-top: 2em;
-    background-color: #C5FCC7;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 2em;
+  background-color: #C5FCC7;
     
 }
 
 #glogo {
-    float: left;
-    padding: 9px 16px;
-    padding-left: 10px;
-    width: 25px;
-    height: 25px;
+  float: left;
+  padding: 9px 16px;
+  padding-left: 10px;
+  width: 25px;
+  height: 25px;
 }
 
 /* Navbar container */
@@ -114,7 +114,7 @@ body {
   /* Links inside the navbar */
   .navbar a {
     float: left;
-    font-size: 16px;
+    font-size: 1.25em;
     color: black;
     text-align: center;
     padding: 14px 16px;
@@ -185,14 +185,15 @@ body {
 .content h1{
     text-align: center;
     font-family: Modern;
-    font-size: 36px;
-    margin-bottom: -5px;
+    font-size: 3.5em;
+    margin-bottom: -.125em;
+    padding-top: .35em;
 }
 
 .content h2{
   text-align: center;
   font-family: Modern;
-  font-size: 28px;
+  font-size: 2.25em;
   margin-top: 3px;
   margin-bottom: 7px;
 }
@@ -202,7 +203,7 @@ body {
   padding-right: 2.5%;
   text-align: center;
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 1.5em;
 }
 
 .content li {
@@ -210,7 +211,7 @@ body {
   padding-right: 2.5%;
   text-align: center;
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 1.5em;
 }
 
 .image-list-small {
@@ -249,9 +250,8 @@ body {
   height: 6.519vw;
   margin: 0;
   padding: 0;
-  /*border: 4px solid #ffffff;
-  outline: 1px solid #d0d0d0;
-  box-shadow: 0 2px 1px #DDD;*/
+  min-width: 65px;
+  min-height: 65px;
 }
 
 .image-list-small .details {
@@ -262,65 +262,131 @@ body {
 .image-list-small .details .caption {
   display: block;
   color: #717171;
-  font-size: min(1.89vw, 11px);
+  font-size: min(1.89vw, .5em);
   font-weight: normal;
   margin-top: -.5vw;
   text-align: center;
 }
 
-.job {
-  display: flex;
-  flex-direction: row;
+@media all and (orientation:landscape) {
+  .job {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .description {
+    width: 70%;
+    align-items: flex-start;
+    font-size: 100%;
+  }
+
+  .description p {
+    text-align: left;
+    font-family: Roboto;
+    font-size: 1.25em;
+  }
+
+  .description li {
+    text-align: left;
+    font-family: Roboto;
+    font-size: 1.25em;
+  }
+
+  .description h1 {
+    text-align: left;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 1.75em;
+    margin-bottom: -1px;
+  }
+
+  .description h2 {
+    text-align: left;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: -12px;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  .logo img {
+    padding-left: 5px;
+    padding-bottom: 10px; 
+    margin-top: 20px;;
+    width: 90%;
+    z-index: 0;
+  }
 }
 
-.description {
-  width: 70%;
-  align-items: flex-start;
-  font-size: 100%;
-}
+@media all and (orientation:portrait) {
+  .job {
+  }
 
-.description p {
-  text-align: left;
-  font-family: Roboto;
-  font-size: 16px;
-}
+  .description {
+    width: 90%;
+   margin-left: auto;
+   margin-right: auto;
+  }
 
-.description h1 {
-  text-align: left;
-  font-family: Roboto;
-  font-weight: bold;
-  font-size: 18px;
-  margin-bottom: -1px;
-}
+  .description p {
+    text-align: left;
+    font-family: Roboto;
+    font-size: 1.25em;
+  }
 
-.description h2 {
-  text-align: left;
-  font-family: Roboto;
-  font-weight: bold;
-  font-size: 10px;
-  margin-bottom: -12px;
-}
+  .description li {
+    text-align: left;
+    font-family: Roboto;
+    font-size: 1.25em;
+  }
 
-.logo {
-  width: 30%;
-}
+  .description h1 {
+    text-align: left;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 1.75em;
+    margin-bottom: -1px;
+  }
 
-.logo img {
-  padding-left: 5px;
-  padding-bottom: 10px; 
-  margin-top: 20px;;
-  width: 90%;
-  z-index: 0;
+  .description h2 {
+    text-align: left;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: -12px;
+  }
+
+  .logo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    margin-bottom: -5%;
+  }
+
+  .logo img {
+    padding-bottom: 10px; 
+    margin-top: 20px;
+    width: 90%;
+    z-index: 0;
+  }
 }
 
 ul.subject-list {
-  text-align: left;
+  text-align: center;
   list-style-type: circle;
   margin-top: -10px;
-  margin-right: -2vw;;
 }
 
 ul.subject-list li {
   display:inline-block;
+}
+
+ul.subject-list p {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1.5em;
 }
 
